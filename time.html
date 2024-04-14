@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取客户端时间</title>
+    <script>
+        function displayCurrentTime() {
+            var now = new Date(); // 创建一个Date对象，获取当前时间
+            var timeString = now.toLocaleString(); // 将时间转换为本地化的字符串格式
+            document.querySelector('.time').innerHTML = timeString; // 更新类名为time的元素内容
+        }
+    </script>
+</head>
+<body onload="displayCurrentTime();"> <!-- 页面加载完成后调用displayCurrentTime函数 -->
+<div class="time"></div> <!-- 这个元素也将显示当前时间 -->
+</body>
+</html>
